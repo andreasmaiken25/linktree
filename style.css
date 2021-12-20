@@ -1,0 +1,205 @@
+body {
+  background: url(img/background.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* Profile */
+.profilecard {
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  align-items: center;
+  margin: auto;
+}
+
+.pic {
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #71b9ff, #e66767);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradien 2s linear infinite;
+}
+
+@keyframes animated-gradien {
+  25% {
+    background-position: left bottom;
+  }
+
+  50% {
+    background-position: right bottom;
+  }
+
+  75% {
+    background-position: right top;
+  }
+
+  100% {
+    background-position: left top;
+  }
+}
+
+.pic img {
+  display: block;
+  width: 165px;
+  height: 165px;
+  border-radius: 100px;
+}
+
+.name {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600px;
+  margin-top: 10px;
+  font-family: "Shippori Antique", sans-serif;
+}
+.decs {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: -5px;
+}
+
+/* Jarak */
+.jarak {
+  padding-top: 4rem;
+}
+
+.jarak1 {
+  padding-top: 2rem;
+}
+
+.jarak2 {
+  padding-top: 15rem;
+}
+
+.jarak3 {
+  padding-bottom: 1rem;
+}
+
+/* Tombol */
+.kotak {
+  width: 350px;
+  height: 50px;
+  background-color: white;
+  border: solid 2px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 25px;
+  transition: box-shadow 0.3s;
+}
+
+.kotak:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.26);
+  color: black;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  width: 100%;
+  background: #562c2d;
+  min-height: 90px;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+
+footer p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  font-family: "Francois One", sans-serif;
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(img/footer/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 0;
+  bottom: 0;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 10px;
+  animation: animateWave 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+/* Deskstop Version */
+@media (min-width: 992px) {
+  /* Tombol */
+  .kotak {
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    border: solid 2px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 25px;
+    transition: box-shadow 0.3s;
+  }
+
+  .kotak:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.26);
+    color: black;
+  }
+}
